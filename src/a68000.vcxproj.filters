@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\depends\mame\src\cpu\m68000\make68k.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="vc">
+      <UniqueIdentifier>{52cd8ff3-6c9f-4ba1-b7ee-0367c1e5374e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vc\vcmame.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

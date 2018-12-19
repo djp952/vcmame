@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "a68000", "src\a68000.vcxproj", "{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c68000", "src\c68000.vcxproj", "{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "romcmp", "src\romcmp.vcxproj", "{6A44771C-8C6E-47D7-91A7-B55237B0150C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548} = {68F0070E-0FB6-422D-8A50-F0C31EF6D548}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hdcomp", "src\hdcomp.vcxproj", "{BBA4A3F5-B4F7-4694-930F-079B00681CDC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548} = {68F0070E-0FB6-422D-8A50-F0C31EF6D548}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mame", "src\mame.vcxproj", "{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548} = {68F0070E-0FB6-422D-8A50-F0C31EF6D548}
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD} = {E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D} = {6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F26B82B5-EECC-4FA3-A920-1BF2B450287B}"
+	ProjectSection(SolutionItems) = preProject
+		msbuild.proj = msbuild.proj
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manifest", "manifest", "{9DF42E4A-E3DB-45BF-85BE-7816567D445E}"
+	ProjectSection(SolutionItems) = preProject
+		manifest\windows-win32.manifest = manifest\windows-win32.manifest
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{CA9AEBED-6CC8-412A-8BCD-0498770196E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artwork", "artwork", "{DB692534-00DC-4A3E-B459-BB025028B640}"
+	ProjectSection(SolutionItems) = preProject
+		package\artwork\dir.txt = package\artwork\dir.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ctrlr", "ctrlr", "{A17B3438-76BE-40C0-8B96-F21BDD4D22A1}"
+	ProjectSection(SolutionItems) = preProject
+		package\ctrlr\std.ini = package\ctrlr\std.ini
+		package\ctrlr\windows.ini = package\ctrlr\windows.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "roms", "roms", "{67CCC929-1E51-4543-97FA-372906A6F601}"
+	ProjectSection(SolutionItems) = preProject
+		package\roms\dir.txt = package\roms\dir.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{E732DFB4-72D9-4BC2-BCCE-290DF3EA021B}"
+	ProjectSection(SolutionItems) = preProject
+		package\samples\dir.txt = package\samples\dir.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotRod", "HotRod", "{712F1CDC-53C2-4A84-A4DA-CC72DA6CFF9C}"
+	ProjectSection(SolutionItems) = preProject
+		package\ctrlr\HotRod\default.ini = package\ctrlr\HotRod\default.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotRodSE", "HotRodSE", "{FE3F11BA-6D5E-4AB1-A755-4CCB82224326}"
+	ProjectSection(SolutionItems) = preProject
+		package\ctrlr\HotRodSE\default.ini = package\ctrlr\HotRodSE\default.ini
+		package\ctrlr\HotRodSE\neogeo.ini = package\ctrlr\HotRodSE\neogeo.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SlikStik", "SlikStik", "{180D310A-E79B-41DE-B086-1737A60C386B}"
+	ProjectSection(SolutionItems) = preProject
+		package\ctrlr\SlikStik\asteroid.ini = package\ctrlr\SlikStik\asteroid.ini
+		package\ctrlr\SlikStik\default.ini = package\ctrlr\SlikStik\default.ini
+		package\ctrlr\SlikStik\missile.ini = package\ctrlr\SlikStik\missile.ini
+		package\ctrlr\SlikStik\mouse.ini = package\ctrlr\SlikStik\mouse.ini
+		package\ctrlr\SlikStik\neogeo.ini = package\ctrlr\SlikStik\neogeo.ini
+		package\ctrlr\SlikStik\tempest.ini = package\ctrlr\SlikStik\tempest.ini
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XArcade", "XArcade", "{E398A459-0647-4BBD-AA00-20F0777B0B7B}"
+	ProjectSection(SolutionItems) = preProject
+		package\ctrlr\XArcade\default.ini = package\ctrlr\XArcade\default.ini
+		package\ctrlr\XArcade\neogeo.ini = package\ctrlr\XArcade\neogeo.ini
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "version", "src\version.vcxproj", "{68F0070E-0FB6-422D-8A50-F0C31EF6D548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Debug|x64.ActiveCfg = Debug|x64
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Debug|x64.Build.0 = Debug|x64
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Debug|x86.ActiveCfg = Debug|Win32
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Debug|x86.Build.0 = Debug|Win32
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Release|x64.ActiveCfg = Release|x64
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Release|x64.Build.0 = Release|x64
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Release|x86.ActiveCfg = Release|Win32
+		{6C33C0E3-8FA2-4EE3-82B9-FE0F4D4CC17D}.Release|x86.Build.0 = Release|Win32
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Debug|x64.ActiveCfg = Debug|x64
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Debug|x64.Build.0 = Debug|x64
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Debug|x86.ActiveCfg = Debug|Win32
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Debug|x86.Build.0 = Debug|Win32
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Release|x64.ActiveCfg = Release|x64
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Release|x64.Build.0 = Release|x64
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Release|x86.ActiveCfg = Release|Win32
+		{E06F87A3-B40B-4598-BB4D-7E5F5AC60AAD}.Release|x86.Build.0 = Release|Win32
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Debug|x64.ActiveCfg = Debug|x64
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Debug|x64.Build.0 = Debug|x64
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Debug|x86.Build.0 = Debug|Win32
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Release|x64.ActiveCfg = Release|x64
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Release|x64.Build.0 = Release|x64
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Release|x86.ActiveCfg = Release|Win32
+		{6A44771C-8C6E-47D7-91A7-B55237B0150C}.Release|x86.Build.0 = Release|Win32
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Debug|x64.ActiveCfg = Debug|x64
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Debug|x64.Build.0 = Debug|x64
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Debug|x86.ActiveCfg = Debug|Win32
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Debug|x86.Build.0 = Debug|Win32
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Release|x64.ActiveCfg = Release|x64
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Release|x64.Build.0 = Release|x64
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Release|x86.ActiveCfg = Release|Win32
+		{BBA4A3F5-B4F7-4694-930F-079B00681CDC}.Release|x86.Build.0 = Release|Win32
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Debug|x64.ActiveCfg = Debug|x64
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Debug|x64.Build.0 = Debug|x64
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Debug|x86.Build.0 = Debug|Win32
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Release|x64.ActiveCfg = Release|x64
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Release|x64.Build.0 = Release|x64
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Release|x86.ActiveCfg = Release|Win32
+		{FB4A5DCE-0BFB-44E1-B32E-2CCC9E88A637}.Release|x86.Build.0 = Release|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Debug|x64.ActiveCfg = Debug|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Debug|x64.Build.0 = Debug|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Debug|x86.ActiveCfg = Debug|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Debug|x86.Build.0 = Debug|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Release|x64.ActiveCfg = Release|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Release|x64.Build.0 = Release|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Release|x86.ActiveCfg = Release|Win32
+		{68F0070E-0FB6-422D-8A50-F0C31EF6D548}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DF42E4A-E3DB-45BF-85BE-7816567D445E} = {F26B82B5-EECC-4FA3-A920-1BF2B450287B}
+		{CA9AEBED-6CC8-412A-8BCD-0498770196E7} = {F26B82B5-EECC-4FA3-A920-1BF2B450287B}
+		{DB692534-00DC-4A3E-B459-BB025028B640} = {CA9AEBED-6CC8-412A-8BCD-0498770196E7}
+		{A17B3438-76BE-40C0-8B96-F21BDD4D22A1} = {CA9AEBED-6CC8-412A-8BCD-0498770196E7}
+		{67CCC929-1E51-4543-97FA-372906A6F601} = {CA9AEBED-6CC8-412A-8BCD-0498770196E7}
+		{E732DFB4-72D9-4BC2-BCCE-290DF3EA021B} = {CA9AEBED-6CC8-412A-8BCD-0498770196E7}
+		{712F1CDC-53C2-4A84-A4DA-CC72DA6CFF9C} = {A17B3438-76BE-40C0-8B96-F21BDD4D22A1}
+		{FE3F11BA-6D5E-4AB1-A755-4CCB82224326} = {A17B3438-76BE-40C0-8B96-F21BDD4D22A1}
+		{180D310A-E79B-41DE-B086-1737A60C386B} = {A17B3438-76BE-40C0-8B96-F21BDD4D22A1}
+		{E398A459-0647-4BBD-AA00-20F0777B0B7B} = {A17B3438-76BE-40C0-8B96-F21BDD4D22A1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0523A8B5-C6CD-4CDB-BF7C-269F9D4FC6E0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zip>
+  <file path="artwork\dir.txt" source="package\artwork\dir.txt" normalize="windows"/>
+  <directory path="ctrlr" source="package\ctrlr" recursive="true"/>
+  <directory path="docs" source="depends\mame\docs" recursive="true"/>
+  <file path="roms\dir.txt" source="package\roms\dir.txt" normalize="windows"/>
+  <file path="samples\dir.txt" source="package\samples\dir.txt" normalize="windows"/>
+  <file path="hdcomp.exe" source="out\windows-Win32\Release\hdcomp.exe"/>
+  <file path="mame.exe" source="out\windows-Win32\Release\mame.exe"/>
+  <file path="romcmp.exe" source="out\windows-Win32\Release\romcmp.exe"/>
+  <file path="whatsnew.txt" source="depends\mame\whatsnew.txt" normalize="windows"/>
+</zip>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{d84f696b-9a35-4195-922d-610eebff183c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vc">
+      <UniqueIdentifier>{e4b5cf89-694a-4bbb-880f-0007119c066f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\depends\zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\infblock.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\infcodes.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\infutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\romcmp.c" />
+    <ClCompile Include="..\depends\mame\src\unzip.c" />
+    <ClCompile Include="vc\dirent.c">
+      <Filter>vc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\depends\zlib\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\driver.h" />
+    <ClInclude Include="..\depends\mame\src\unzip.h" />
+    <ClInclude Include="..\depends\mame\src\fileio.h" />
+    <ClInclude Include="vc\dirent.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+    <ClInclude Include="vc\vcmame.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\tmp\version\version.rc">
+      <Filter>vc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
