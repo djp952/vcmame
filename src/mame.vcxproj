@@ -85,6 +85,7 @@
     <ClInclude Include="..\depends\mame\src\cpu\nec\necinstr.h" />
     <ClInclude Include="..\depends\mame\src\cpu\nec\necintrf.h" />
     <ClInclude Include="..\depends\mame\src\cpu\nec\necmodrm.h" />
+    <ClInclude Include="..\depends\mame\src\cpu\pic16c5x\pic16c5x.h" />
     <ClInclude Include="..\depends\mame\src\cpu\s2650\s2650.h" />
     <ClInclude Include="..\depends\mame\src\cpu\s2650\s2650cpu.h" />
     <ClInclude Include="..\depends\mame\src\cpu\sh2\sh2.h" />
@@ -283,6 +284,7 @@
     <ClInclude Include="..\depends\mame\src\machine\eeprom.h" />
     <ClInclude Include="..\depends\mame\src\machine\idectrl.h" />
     <ClInclude Include="..\depends\mame\src\machine\irem_cpu.h" />
+    <ClInclude Include="..\depends\mame\src\machine\konamigx.h" />
     <ClInclude Include="..\depends\mame\src\machine\m68kfmly.h" />
     <ClInclude Include="..\depends\mame\src\machine\mathbox.h" />
     <ClInclude Include="..\depends\mame\src\machine\mb87078.h" />
@@ -329,6 +331,7 @@
     <ClInclude Include="..\depends\mame\src\sound\ay8910.h" />
     <ClInclude Include="..\depends\mame\src\sound\bsmt2000.h" />
     <ClInclude Include="..\depends\mame\src\sound\c140.h" />
+    <ClInclude Include="..\depends\mame\src\sound\c6280.h" />
     <ClInclude Include="..\depends\mame\src\sound\cem3394.h" />
     <ClInclude Include="..\depends\mame\src\sound\dac.h" />
     <ClInclude Include="..\depends\mame\src\sound\discrete.h" />
@@ -347,6 +350,7 @@
     <ClInclude Include="..\depends\mame\src\sound\mixer.h" />
     <ClInclude Include="..\depends\mame\src\sound\msm5205.h" />
     <ClInclude Include="..\depends\mame\src\sound\msm5232.h" />
+    <ClInclude Include="..\depends\mame\src\sound\multipcm.h" />
     <ClInclude Include="..\depends\mame\src\sound\namco.h" />
     <ClInclude Include="..\depends\mame\src\sound\namcona.h" />
     <ClInclude Include="..\depends\mame\src\sound\nes_apu.h" />
@@ -410,6 +414,7 @@
     <ClInclude Include="..\depends\mame\src\windows\winddraw.h" />
     <ClInclude Include="..\depends\mame\src\windows\window.h" />
     <ClInclude Include="..\depends\mame\src\windows\winprefix.h" />
+    <ClInclude Include="..\depends\mame\src\x86drc.h" />
     <ClInclude Include="..\depends\zlib\zconf.h" />
     <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="..\tmp\c68000\m68kops.h" />
@@ -514,7 +519,7 @@
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\cpu\m6809\m6809.c" />
     <ClCompile Include="..\depends\mame\src\cpu\mips\mips.c" />
-    <ClCompile Include="..\depends\mame\src\cpu\mips\mips3.c" />
+    <ClCompile Include="..\depends\mame\src\cpu\mips\mips3drc.c" />
     <ClCompile Include="..\depends\mame\src\cpu\mips\mips3dsm.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -533,6 +538,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\pic16c5x\16c5xdsm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\pic16c5x\pic16c5x.c" />
     <ClCompile Include="..\depends\mame\src\cpu\s2650\2650dasm.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -739,6 +749,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\ddragon.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ddragon3.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ddrible.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\deadang.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dec0.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dec8.c" />
     <ClCompile Include="..\depends\mame\src\drivers\deco32.c" />
@@ -755,6 +766,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\dooyong.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dotrikun.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dragrace.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\drgnmst.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dribling.c" />
     <ClCompile Include="..\depends\mame\src\drivers\drmicro.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dynax.c" />
@@ -866,11 +878,11 @@
     <ClCompile Include="..\depends\mame\src\drivers\kinst.c" />
     <ClCompile Include="..\depends\mame\src\drivers\klax.c" />
     <ClCompile Include="..\depends\mame\src\drivers\kncljoe.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\konamigx.c" />
     <ClCompile Include="..\depends\mame\src\drivers\kopunch.c" />
     <ClCompile Include="..\depends\mame\src\drivers\kyugo.c" />
     <ClCompile Include="..\depends\mame\src\drivers\labyrunr.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ladybug.c" />
-    <ClCompile Include="..\depends\mame\src\drivers\ladyfrog.c" />
     <ClCompile Include="..\depends\mame\src\drivers\lasso.c" />
     <ClCompile Include="..\depends\mame\src\drivers\lastduel.c" />
     <ClCompile Include="..\depends\mame\src\drivers\lazercmd.c" />
@@ -939,8 +951,10 @@
     <ClCompile Include="..\depends\mame\src\drivers\ms32.c" />
     <ClCompile Include="..\depends\mame\src\drivers\msisaac.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mugsmash.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\multi32.c" />
     <ClCompile Include="..\depends\mame\src\drivers\munchmo.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mystston.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\mystwarr.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcoic.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcona1.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namconb1.c" />
@@ -1297,6 +1311,7 @@
     <ClCompile Include="..\depends\mame\src\machine\jumpshot.c" />
     <ClCompile Include="..\depends\mame\src\machine\kabuki.c" />
     <ClCompile Include="..\depends\mame\src\machine\konami.c" />
+    <ClCompile Include="..\depends\mame\src\machine\konamigx.c" />
     <ClCompile Include="..\depends\mame\src\machine\kyugo.c" />
     <ClCompile Include="..\depends\mame\src\machine\leland.c" />
     <ClCompile Include="..\depends\mame\src\machine\leprechn.c" />
@@ -1456,6 +1471,7 @@
     <ClCompile Include="..\depends\mame\src\sound\ay8910.c" />
     <ClCompile Include="..\depends\mame\src\sound\bsmt2000.c" />
     <ClCompile Include="..\depends\mame\src\sound\c140.c" />
+    <ClCompile Include="..\depends\mame\src\sound\c6280.c" />
     <ClCompile Include="..\depends\mame\src\sound\cem3394.c" />
     <ClCompile Include="..\depends\mame\src\sound\dac.c" />
     <ClCompile Include="..\depends\mame\src\sound\discrete.c" />
@@ -1474,6 +1490,7 @@
     <ClCompile Include="..\depends\mame\src\sound\mixer.c" />
     <ClCompile Include="..\depends\mame\src\sound\msm5205.c" />
     <ClCompile Include="..\depends\mame\src\sound\msm5232.c" />
+    <ClCompile Include="..\depends\mame\src\sound\multipcm.c" />
     <ClCompile Include="..\depends\mame\src\sound\namco.c" />
     <ClCompile Include="..\depends\mame\src\sound\namcona.c" />
     <ClCompile Include="..\depends\mame\src\sound\nes_apu.c" />
@@ -1636,6 +1653,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\ddragon.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ddragon3.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ddrible.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\deadang.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dec0.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dec8.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\deco16ic.c" />
@@ -1652,6 +1670,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\dooyong.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dotrikun.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dragrace.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\drgnmst.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dribling.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\drmicro.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dynax.c" />
@@ -1758,6 +1777,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\kinst.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\klax.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\kncljoe.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\konamigx.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\konamiic.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\kyugo.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\labyrunr.c" />
@@ -1825,6 +1845,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\mugsmash.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\munchmo.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\mystston.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\mystwarr.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\namcona1.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\namconb1.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\namcos1.c" />
@@ -2107,6 +2128,7 @@
     <ClCompile Include="..\depends\mame\src\windows\winddraw.c" />
     <ClCompile Include="..\depends\mame\src\windows\window.c" />
     <ClCompile Include="..\depends\mame\src\windows\winmain.c" />
+    <ClCompile Include="..\depends\mame\src\x86drc.c" />
     <ClCompile Include="..\depends\zlib\adler32.c" />
     <ClCompile Include="..\depends\zlib\compress.c" />
     <ClCompile Include="..\depends\zlib\crc32.c" />

@@ -136,6 +136,9 @@
     <Filter Include="cpu\m68000\asmcore">
       <UniqueIdentifier>{1a8747ab-83fe-4283-ab34-b4d365d8d317}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpu\pic16c5x">
+      <UniqueIdentifier>{2fca6b0f-6a92-4a82-8d73-1b9c2ff2e814}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\depends\mame\src\artwork.h" />
@@ -1257,6 +1260,19 @@
     </ClInclude>
     <ClInclude Include="..\tmp\c68000\m68kops.h">
       <Filter>cpu\m68000\ccore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\x86drc.h" />
+    <ClInclude Include="..\depends\mame\src\machine\konamigx.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\multipcm.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\c6280.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\pic16c5x\pic16c5x.h">
+      <Filter>cpu\pic16c5x</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -4692,9 +4708,6 @@
     <ClCompile Include="..\depends\mame\src\drivers\ladybug.c">
       <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\drivers\ladyfrog.c">
-      <Filter>drivers</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\lasso.c">
       <Filter>drivers</Filter>
     </ClCompile>
@@ -5892,12 +5905,6 @@
     <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kmame.c">
       <Filter>cpu\m68000</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\cpu\mips\mips.c">
-      <Filter>cpu\mips</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\cpu\mips\mips3.c">
-      <Filter>cpu\mips</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\cpu\mips\mips3dsm.c">
       <Filter>cpu\mips</Filter>
     </ClCompile>
@@ -6023,6 +6030,55 @@
     </ClCompile>
     <ClCompile Include="..\tmp\c68000\m68kopac.c">
       <Filter>cpu\m68000\ccore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\x86drc.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\multi32.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\konamigx.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\mystwarr.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\konamigx.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\deadang.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\deadang.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\drgnmst.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\drgnmst.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\multipcm.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\c6280.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\pic16c5x\16c5xdsm.c">
+      <Filter>cpu\pic16c5x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\pic16c5x\pic16c5x.c">
+      <Filter>cpu\pic16c5x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\mips\mips3drc.c">
+      <Filter>cpu\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\mips\mips.c">
+      <Filter>cpu\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\konamigx.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\mystwarr.c">
+      <Filter>drivers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

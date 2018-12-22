@@ -143,6 +143,11 @@
 #define HAS_R4600 1					// 0.63
 #define HAS_R5000 1					// 0.63
 //#define HAS_TI990_10 1			
+#define HAS_PIC16C54 0				// 0.67
+#define HAS_PIC16C55 1				// 0.67
+#define HAS_PIC16C56 0				// 0.67
+#define HAS_PIC16C57 1				// 0.67
+#define HAS_PIC16C58 0				// 0.67
 
 // 
 // HAS_SOUND
@@ -203,7 +208,8 @@
 #define HAS_GAELCO_GAE1 1		// 0.63
 #define HAS_X1_010 1			// 0.65
 #define HAS_YMF262 1			// 0.66
-
+#define HAS_MULTIPCM 1			// 0.67
+#define HAS_C6280 1				// 0.67
 //---------------------------------------------------------------------------
 
 #endif		// __VCMAME_H_
