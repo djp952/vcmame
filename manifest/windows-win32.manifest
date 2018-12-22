@@ -10,4 +10,5 @@
   <file path="romcmp.exe" source="out\windows-Win32\Release\romcmp.exe"/>
   <file path="whatsnew.txt" source="depends\mame\whatsnew.txt" normalize="windows"/>
   <file path="whatsold.txt" source="depends\mame\whatsold.txt" normalize="windows"/>
+  <file path="xml2info.exe" source="out\windows-Win32\Release\xml2info.exe"/>
 </zip>

@@ -133,9 +133,6 @@
     <Filter Include="cpu\m68000\ccore">
       <UniqueIdentifier>{80a74019-bc6c-471f-ac39-c8c94aeca7df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="cpu\m68000\asmcore">
-      <UniqueIdentifier>{1a8747ab-83fe-4283-ab34-b4d365d8d317}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cpu\pic16c5x">
       <UniqueIdentifier>{2fca6b0f-6a92-4a82-8d73-1b9c2ff2e814}</UniqueIdentifier>
     </Filter>
@@ -5940,9 +5937,6 @@
     <ClCompile Include="..\depends\mame\src\cpu\m6809\m6809.c">
       <Filter>cpu\m6809</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\cpu\m68000\asmintf.c">
-      <Filter>cpu\m68000</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kcpu.c">
       <Filter>cpu\m68000</Filter>
     </ClCompile>
@@ -6309,14 +6303,23 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\portrait.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\djboy.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\glass.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\djboy.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\glass.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\pgmprot.c">
+      <Filter>machine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\tmp\a68000\a68020.asm">
-      <Filter>cpu\m68000\asmcore</Filter>
-    </CustomBuild>
-    <CustomBuild Include="..\tmp\a68000\a68000.asm">
-      <Filter>cpu\m68000\asmcore</Filter>
-    </CustomBuild>
     <CustomBuild Include="..\depends\mame\src\windows\asmblit.asm">
       <Filter>windows</Filter>
     </CustomBuild>

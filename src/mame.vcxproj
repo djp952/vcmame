@@ -518,7 +518,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\cpu\m6502\m6502.c" />
-    <ClCompile Include="..\depends\mame\src\cpu\m68000\asmintf.c" />
     <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kcpu.c" />
     <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kdasm.c" />
     <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kmame.c" />
@@ -780,6 +779,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\destroyr.c" />
     <ClCompile Include="..\depends\mame\src\drivers\digdug.c" />
     <ClCompile Include="..\depends\mame\src\drivers\diverboy.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\djboy.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dkong.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dlair.c" />
     <ClCompile Include="..\depends\mame\src\drivers\docastle.c" />
@@ -847,6 +847,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\gijoe.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ginganin.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gladiatr.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\glass.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gng.c" />
     <ClCompile Include="..\depends\mame\src\drivers\goindol.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gomoku.c" />
@@ -1393,6 +1394,7 @@
     <ClCompile Include="..\depends\mame\src\machine\pacplus.c" />
     <ClCompile Include="..\depends\mame\src\machine\pd4990a.c" />
     <ClCompile Include="..\depends\mame\src\machine\pgmcrypt.c" />
+    <ClCompile Include="..\depends\mame\src\machine\pgmprot.c" />
     <ClCompile Include="..\depends\mame\src\machine\phozon.c" />
     <ClCompile Include="..\depends\mame\src\machine\playch10.c" />
     <ClCompile Include="..\depends\mame\src\machine\polepos.c" />
@@ -1722,6 +1724,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\destroyr.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\digdug.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\diverboy.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\djboy.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dkong.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\docastle.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\dogfgt.c" />
@@ -1786,6 +1789,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\gijoe.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ginganin.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gladiatr.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\glass.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gng.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\goindol.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gomoku.c" />
@@ -2284,30 +2288,6 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\tmp\a68000\a68000.asm">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)..\reference\nasm-win32\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(ProjectDir)..\reference\nasm-win32\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(ProjectDir)..\reference\nasm-win64\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(ProjectDir)..\reference\nasm-win64\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="..\tmp\a68000\a68020.asm">
-      <FileType>Document</FileType>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(ProjectDir)..\reference\nasm-win32\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(ProjectDir)..\reference\nasm-win32\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(ProjectDir)..\reference\nasm-win64\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(ProjectDir)..\reference\nasm-win64\nasm.exe" -f coff -o "$(IntDir)%(Directory)\%(Filename).obj" "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Directory)\%(Filename).obj</Outputs>
     </CustomBuild>
   </ItemGroup>

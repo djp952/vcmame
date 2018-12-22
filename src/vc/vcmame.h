@@ -55,7 +55,7 @@
 //
 // M68000 CORES
 //
-#define A68K0						// Assembler-based M68000 CPU Core
+//#define A68K0						// Assembler-based M68000 CPU Core
 //#define A68K2						// Assembler-based M68020 CPU Core
 
 //

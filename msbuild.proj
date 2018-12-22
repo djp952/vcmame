@@ -46,6 +46,7 @@
     <MSBuild Projects="src\mame.vcxproj" Properties="Configuration=$(Configuration);Platform=Win32" Targets="Build" ContinueOnError="false"/>
     <MSBuild Projects="src\romcmp.vcxproj" Properties="Configuration=$(Configuration);Platform=Win32" Targets="Build" ContinueOnError="false"/>
     <MSBuild Projects="src\hdcomp.vcxproj" Properties="Configuration=$(Configuration);Platform=Win32" Targets="Build" ContinueOnError="false"/>
+    <MSBuild Projects="src\xml2info.vcxproj" Properties="Configuration=$(Configuration);Platform=Win32" Targets="Build" ContinueOnError="false"/>
     <Exec Command="$(ZipperExe) create out\vcmame-windows-win32-$(ProjectVersion).zip manifest\windows-win32.manifest" ContinueOnError="false"/>
 
   </Target>
