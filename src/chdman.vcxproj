@@ -19,29 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\depends\zlib\adler32.c" />
+    <ClCompile Include="..\depends\zlib\crc32.c" />
+    <ClCompile Include="..\depends\zlib\deflate.c" />
+    <ClCompile Include="..\depends\zlib\inffast.c" />
+    <ClCompile Include="..\depends\zlib\inflate.c" />
+    <ClCompile Include="..\depends\zlib\inftrees.c" />
+    <ClCompile Include="..\depends\zlib\trees.c" />
+    <ClCompile Include="..\depends\zlib\zutil.c" />
     <ClCompile Include="chd.c" />
     <ClCompile Include="chdman.c" />
     <ClCompile Include="md5.c" />
     <ClCompile Include="sha1.c" />
     <ClCompile Include="version.c" />
-    <ClCompile Include="..\depends\zlib\adler32.c" />
-    <ClCompile Include="..\depends\zlib\crc32.c" />
-    <ClCompile Include="..\depends\zlib\deflate.c" />
-    <ClCompile Include="..\depends\zlib\infblock.c" />
-    <ClCompile Include="..\depends\zlib\infcodes.c" />
-    <ClCompile Include="..\depends\zlib\inffast.c" />
-    <ClCompile Include="..\depends\zlib\inflate.c" />
-    <ClCompile Include="..\depends\zlib\inftrees.c" />
-    <ClCompile Include="..\depends\zlib\infutil.c" />
-    <ClCompile Include="..\depends\zlib\trees.c" />
-    <ClCompile Include="..\depends\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="chd.h" />
     <ClInclude Include="md5.h" />
     <ClInclude Include="sha1.h" />
-    <ClInclude Include="..\depends\zlib\zconf.h" />
-    <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="vc\vcmame.h" />
   </ItemGroup>
   <ItemGroup>

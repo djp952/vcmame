@@ -181,12 +181,6 @@
     <ClInclude Include="unzip.h" />
     <ClInclude Include="usrintrf.h" />
     <ClInclude Include="window.h" />
-    <ClInclude Include="..\depends\zlib\zconf.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\depends\zlib\zlib.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
     <ClInclude Include="windows\blit.h">
       <Filter>windows</Filter>
     </ClInclude>
@@ -1389,6 +1383,9 @@
     <ClInclude Include="sndhrdw\cage.h">
       <Filter>sndhrdw</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="artwork.c" />
@@ -1424,39 +1421,6 @@
     <ClCompile Include="usrintrf.c" />
     <ClCompile Include="version.c" />
     <ClCompile Include="window.c" />
-    <ClCompile Include="..\depends\zlib\adler32.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\crc32.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\deflate.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\infblock.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\infcodes.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\inffast.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\inflate.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\inftrees.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\infutil.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\trees.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\zutil.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
     <ClCompile Include="windows\blit.c">
       <Filter>windows</Filter>
     </ClCompile>
@@ -6095,12 +6059,6 @@
     <ClCompile Include="vc\dirent.c">
       <Filter>vc</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\zlib\compress.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\zlib\uncompr.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
     <ClCompile Include="..\tmp\c68000\m68kopdm.c">
       <Filter>cpu\m68000\ccore</Filter>
     </ClCompile>
@@ -6690,6 +6648,36 @@
     </ClCompile>
     <ClCompile Include="drivers\supertnk.c">
       <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\compress.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\zlib\trees.c">
+      <Filter>zlib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

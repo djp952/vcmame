@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="artwork.h" />
     <ClInclude Include="audit.h" />
     <ClInclude Include="chd.h" />
@@ -453,14 +454,22 @@
     <ClInclude Include="windows\window.h" />
     <ClInclude Include="windows\winprefix.h" />
     <ClInclude Include="x86drc.h" />
-    <ClInclude Include="..\depends\zlib\zconf.h" />
-    <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="..\tmp\c68000\m68kops.h" />
     <ClInclude Include="vc\dirent.h" />
     <ClInclude Include="vc\unistd.h" />
     <ClInclude Include="vc\vcmame.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\depends\zlib\adler32.c" />
+    <ClCompile Include="..\depends\zlib\compress.c" />
+    <ClCompile Include="..\depends\zlib\crc32.c" />
+    <ClCompile Include="..\depends\zlib\deflate.c" />
+    <ClCompile Include="..\depends\zlib\inffast.c" />
+    <ClCompile Include="..\depends\zlib\inflate.c" />
+    <ClCompile Include="..\depends\zlib\inftrees.c" />
+    <ClCompile Include="..\depends\zlib\trees.c" />
+    <ClCompile Include="..\depends\zlib\uncompr.c" />
+    <ClCompile Include="..\depends\zlib\zutil.c" />
     <ClCompile Include="artwork.c" />
     <ClCompile Include="audit.c" />
     <ClCompile Include="chd.c" />
@@ -2345,19 +2354,6 @@
     <ClCompile Include="windows\window.c" />
     <ClCompile Include="windows\winmain.c" />
     <ClCompile Include="x86drc.c" />
-    <ClCompile Include="..\depends\zlib\adler32.c" />
-    <ClCompile Include="..\depends\zlib\compress.c" />
-    <ClCompile Include="..\depends\zlib\crc32.c" />
-    <ClCompile Include="..\depends\zlib\deflate.c" />
-    <ClCompile Include="..\depends\zlib\infblock.c" />
-    <ClCompile Include="..\depends\zlib\infcodes.c" />
-    <ClCompile Include="..\depends\zlib\inffast.c" />
-    <ClCompile Include="..\depends\zlib\inflate.c" />
-    <ClCompile Include="..\depends\zlib\inftrees.c" />
-    <ClCompile Include="..\depends\zlib\infutil.c" />
-    <ClCompile Include="..\depends\zlib\trees.c" />
-    <ClCompile Include="..\depends\zlib\uncompr.c" />
-    <ClCompile Include="..\depends\zlib\zutil.c" />
     <ClCompile Include="..\tmp\c68000\m68kopac.c">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)cpu\m68000;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)cpu\m68000;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
