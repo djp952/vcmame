@@ -37,6 +37,7 @@
 #define DIRECTDRAW_VERSION 0x0300
 #define NONAMELESSUNION
 #pragma warning(disable:4146)			// "unary minus operator applied to unsigned type"
+#pragma warning(disable:4703)			// "potentially uninitialized local pointer"
 
 //
 // DEPRECATIONS
@@ -151,6 +152,7 @@
 #define HAS_G65816 1				// 0.72
 #define HAS_SPC700 1				// 0.72
 #define HAS_E132XS 1				// 0.73
+#define HAS_ADSP2104 1				// 0.78
 
 // 
 // HAS_SOUND
@@ -216,6 +218,8 @@
 #define HAS_TIA 1				// 0.68
 #define HAS_SP0250 1			// 0.72
 #define HAS_SCSP 1				// 0.77
+#define HAS_PSXSPU 1			// 0.78
+#define HAS_YMF271 1			// 0.78
 
 //---------------------------------------------------------------------------
 

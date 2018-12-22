@@ -10,7 +10,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\md5.c" />
-    <ClCompile Include="..\depends\mame\src\harddisk.c" />
     <ClCompile Include="..\depends\zlib\adler32.c">
       <Filter>zlib</Filter>
     </ClCompile>
@@ -44,11 +43,13 @@
     <ClCompile Include="..\depends\zlib\zutil.c">
       <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\hdcomp.c" />
+    <ClCompile Include="..\depends\mame\src\chd.c" />
+    <ClCompile Include="..\depends\mame\src\chdman.c" />
+    <ClCompile Include="..\depends\mame\src\sha1.c" />
+    <ClCompile Include="..\depends\mame\src\version.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\depends\mame\src\md5.h" />
-    <ClInclude Include="..\depends\mame\src\harddisk.h" />
     <ClInclude Include="..\depends\zlib\zconf.h">
       <Filter>zlib</Filter>
     </ClInclude>
@@ -58,6 +59,8 @@
     <ClInclude Include="vc\vcmame.h">
       <Filter>vc</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\mame\src\chd.h" />
+    <ClInclude Include="..\depends\mame\src\sha1.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\tmp\version\version.rc">

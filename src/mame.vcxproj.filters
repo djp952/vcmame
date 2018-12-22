@@ -979,13 +979,7 @@
     <ClInclude Include="..\depends\mame\src\includes\tubep.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="..\depends\mame\src\includes\tunhunt.h">
-      <Filter>includes</Filter>
-    </ClInclude>
     <ClInclude Include="..\depends\mame\src\includes\turbo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\depends\mame\src\includes\videopin.h">
       <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\includes\vindictr.h">
@@ -1373,14 +1367,27 @@
     <ClInclude Include="..\depends\mame\src\machine\stvcd.h">
       <Filter>machine</Filter>
     </ClInclude>
-    <ClInclude Include="..\depends\mame\src\sndhrdw\cage.h">
-      <Filter>sndhrdw</Filter>
-    </ClInclude>
     <ClInclude Include="..\depends\mame\src\sound\scsp.h">
       <Filter>sound</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\vidhrdw\voodoo.h">
       <Filter>vidhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\psx.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\ymf271.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\chd.h" />
+    <ClInclude Include="..\depends\mame\src\machine\scudsp.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\machine\am53cf96.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sndhrdw\cage.h">
+      <Filter>sndhrdw</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -2953,9 +2960,6 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\taito_l.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\vidhrdw\taito_x.c">
-      <Filter>vidhrdw</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\taito_z.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
@@ -3971,9 +3975,6 @@
       <Filter>machine</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\machine\twincobr.c">
-      <Filter>machine</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\machine\videopin.c">
       <Filter>machine</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\machine\volfied.c">
@@ -6614,9 +6615,6 @@
     <ClCompile Include="..\depends\mame\src\machine\stvcd.c">
       <Filter>machine</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\sndhrdw\cage.c">
-      <Filter>sndhrdw</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\sound\scsp.c">
       <Filter>sound</Filter>
     </ClCompile>
@@ -6631,6 +6629,67 @@
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\voodoo.c">
       <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\psx.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\ymf271.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\chd.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\namcos10.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\ashnojoe.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\ashnojoe.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\kopunch.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\scudsp.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\am53cf96.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\konamigq.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\runaway.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\runaway.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sndhrdw\cage.c">
+      <Filter>sndhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\quizpani.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\jchan.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\malzak.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\crospang.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\funybubl.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\malzak.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\rabbit.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\supertnk.c">
+      <Filter>drivers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

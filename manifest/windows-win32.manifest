@@ -5,7 +5,8 @@
   <directory path="docs" source="depends\mame\docs" recursive="true"/>
   <file path="roms\dir.txt" source="package\roms\dir.txt" normalize="windows"/>
   <file path="samples\dir.txt" source="package\samples\dir.txt" normalize="windows"/>
-  <file path="hdcomp.exe" source="out\windows-Win32\Release\hdcomp.exe"/>
+  <file path="changed.txt" source="depends\mame\changed.txt" normalize="windows"/>
+  <file path="chdman.exe" source="out\windows-Win32\Release\chdman.exe"/>
   <file path="mame.exe" source="out\windows-Win32\Release\mame.exe"/>
   <file path="romcmp.exe" source="out\windows-Win32\Release\romcmp.exe"/>
   <file path="whatsnew.txt" source="depends\mame\whatsnew.txt" normalize="windows"/>
