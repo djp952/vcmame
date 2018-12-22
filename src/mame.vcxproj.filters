@@ -1369,6 +1369,10 @@
     <ClInclude Include="..\depends\mame\src\cpu\e132xs\e132xs.h">
       <Filter>cpu\e132xs</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\mame\src\windows\config.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\config.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\artwork.c" />
@@ -6523,6 +6527,52 @@
       <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\inufuku.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\config.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\compgolf.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\djmain.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\dorachan.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\embargo.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\homerun.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\jcross.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\ladyfrog.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\marinedt.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\yumefuda.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\djmain.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\dorachan.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\homerun.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\jcross.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\ladyfrog.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\mainsnk.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
   </ItemGroup>
