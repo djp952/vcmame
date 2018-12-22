@@ -1324,6 +1324,9 @@
     <ClInclude Include="..\depends\mame\src\includes\unico.h">
       <Filter>includes</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\mame\src\includes\psx.h">
+      <Filter>includes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\artwork.c" />
@@ -6317,6 +6320,27 @@
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\machine\pgmprot.c">
       <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\boxer.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\enigma2.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\namcos11.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\r2dtank.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\psx.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\boxer.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\psx.c">
+      <Filter>vidhrdw</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

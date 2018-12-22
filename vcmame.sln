@@ -27,6 +27,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F26B82B5-EECC-4FA3-A920-1BF2B450287B}"
 	ProjectSection(SolutionItems) = preProject
 		msbuild.proj = msbuild.proj
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manifest", "manifest", "{9DF42E4A-E3DB-45BF-85BE-7816567D445E}"

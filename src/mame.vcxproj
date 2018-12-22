@@ -237,6 +237,7 @@
     <ClInclude Include="..\depends\mame\src\includes\pengo.h" />
     <ClInclude Include="..\depends\mame\src\includes\policetr.h" />
     <ClInclude Include="..\depends\mame\src\includes\psikyosh.h" />
+    <ClInclude Include="..\depends\mame\src\includes\psx.h" />
     <ClInclude Include="..\depends\mame\src\includes\qix.h" />
     <ClInclude Include="..\depends\mame\src\includes\rampart.h" />
     <ClInclude Include="..\depends\mame\src\includes\realbrk.h" />
@@ -705,6 +706,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\bombjack.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bosco.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bottom9.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\boxer.c" />
     <ClCompile Include="..\depends\mame\src\drivers\brkthru.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bsktball.c" />
     <ClCompile Include="..\depends\mame\src\drivers\btime.c" />
@@ -793,6 +795,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\drmicro.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dynax.c" />
     <ClCompile Include="..\depends\mame\src\drivers\dynduke.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\enigma2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\epos.c" />
     <ClCompile Include="..\depends\mame\src\drivers\eprom.c" />
     <ClCompile Include="..\depends\mame\src\drivers\equites.c" />
@@ -991,6 +994,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\namconb1.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcond1.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcos1.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\namcos11.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcos2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcos21.c" />
     <ClCompile Include="..\depends\mame\src\drivers\namcos22.c" />
@@ -1065,6 +1069,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\qix.c" />
     <ClCompile Include="..\depends\mame\src\drivers\quantum.c" />
     <ClCompile Include="..\depends\mame\src\drivers\quizdna.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\r2dtank.c" />
     <ClCompile Include="..\depends\mame\src\drivers\raiden.c" />
     <ClCompile Include="..\depends\mame\src\drivers\raiden2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\raiders5.c" />
@@ -1398,6 +1403,7 @@
     <ClCompile Include="..\depends\mame\src\machine\phozon.c" />
     <ClCompile Include="..\depends\mame\src\machine\playch10.c" />
     <ClCompile Include="..\depends\mame\src\machine\polepos.c" />
+    <ClCompile Include="..\depends\mame\src\machine\psx.c" />
     <ClCompile Include="..\depends\mame\src\machine\qix.c" />
     <ClCompile Include="..\depends\mame\src\machine\rainbow.c" />
     <ClCompile Include="..\depends\mame\src\machine\random.c" />
@@ -1658,6 +1664,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\bombjack.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bosco.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bottom9.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\boxer.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\brkthru.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bsktball.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\btime.c" />
@@ -1982,6 +1989,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\psikyo.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\psikyo4.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\psikyosh.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\psx.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\psychic5.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\punchout.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pushman.c" />
