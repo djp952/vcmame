@@ -727,6 +727,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\bigevglf.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bigstrkb.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bionicc.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\bishi.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bking2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bladestl.c" />
     <ClCompile Include="..\depends\mame\src\drivers\blktiger.c" />
@@ -1294,6 +1295,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\triplhnt.c" />
     <ClCompile Include="..\depends\mame\src\drivers\troangel.c" />
     <ClCompile Include="..\depends\mame\src\drivers\truco.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\tryout.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tsamurai.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ttmahjng.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tubep.c" />
@@ -1717,6 +1719,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\bigevglf.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bigstrkb.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bionicc.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\bishi.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bking2.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bladestl.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\blktiger.c" />

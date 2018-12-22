@@ -6575,6 +6575,15 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\mainsnk.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\bishi.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\tryout.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\bishi.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\depends\mame\src\windows\asmblit.asm">
