@@ -2160,31 +2160,24 @@ void start_led(void)
 	if (!use_keyboard_leds)
 		return;
 
-	// retrive windows version
-	GetVersionEx(&osinfo);
+	int error_number;
 
-	// nt/2k/xp
-	if (!(osinfo.dwPlatformId == VER_PLATFORM_WIN32_WINDOWS))
+	if (!DefineDosDevice (DDD_RAW_TARGET_PATH, "Kbd",
+				"\\Device\\KeyboardClass0"))
 	{
-		int error_number;
+		error_number = GetLastError();
+		fprintf(stderr, "Unable to open the keyboard device. (error %d)\n", error_number);
+		return;
+	}
 
-		if (!DefineDosDevice (DDD_RAW_TARGET_PATH, "Kbd",
-					"\\Device\\KeyboardClass0"))
-		{
-			error_number = GetLastError();
-			fprintf(stderr, "Unable to open the keyboard device. (error %d)\n", error_number);
-			return;
-		}
+	hKbdDev = CreateFile("\\\\.\\Kbd", GENERIC_WRITE, 0,
+				NULL,	OPEN_EXISTING,	0,	NULL);
 
-		hKbdDev = CreateFile("\\\\.\\Kbd", GENERIC_WRITE, 0,
-					NULL,	OPEN_EXISTING,	0,	NULL);
-
-		if (hKbdDev == INVALID_HANDLE_VALUE)
-		{
-			error_number = GetLastError();
-			fprintf(stderr, "Unable to open the keyboard device. (error %d)\n", error_number);
-			return;
-		}
+	if (hKbdDev == INVALID_HANDLE_VALUE)
+	{
+		error_number = GetLastError();
+		fprintf(stderr, "Unable to open the keyboard device. (error %d)\n", error_number);
+		return;
 	}
 
 	// remember the initial LED states

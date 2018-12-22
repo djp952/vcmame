@@ -37,14 +37,12 @@
 #define DIRECTDRAW_VERSION 0x0300
 #define NONAMELESSUNION
 #pragma warning(disable:4146)			// "unary minus operator applied to unsigned type"
-#pragma warning(disable:4703)			// "potentially uninitialized local pointer"
 
 //
 // DEPRECATIONS
 //
 #define _CRT_SECURE_NO_WARNINGS
 #define _CRT_NONSTDC_NO_WARNINGS
-#pragma warning(disable:4996)			// "was declared deprecated"
 
 //
 // MAME_DEBUG

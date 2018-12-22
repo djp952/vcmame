@@ -1030,13 +1030,9 @@ static void do_diff(int argc, char *argv[])
 	if (argc != 5)
 		error();
 
-	/* extract the data */
-	if (argc == 5)
-	{
-		parentfile = argv[2];
-		inputfile = argv[3];
-		outputfile = argv[4];
-	}
+	parentfile = argv[2];
+	inputfile = argv[3];
+	outputfile = argv[4];
 
 	/* print some info */
 	printf("Parent file:  %s\n", parentfile);
