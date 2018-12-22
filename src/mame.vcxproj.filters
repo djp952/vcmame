@@ -6519,6 +6519,12 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\stvvdp2.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\inufuku.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\inufuku.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\depends\mame\src\windows\asmblit.asm">

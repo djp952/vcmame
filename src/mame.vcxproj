@@ -919,6 +919,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\hyperspt.c" />
     <ClCompile Include="..\depends\mame\src\drivers\hyprduel.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ikki.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\inufuku.c" />
     <ClCompile Include="..\depends\mame\src\drivers\iqblock.c" />
     <ClCompile Include="..\depends\mame\src\drivers\irobot.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ironhors.c" />
@@ -1883,6 +1884,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\hyperspt.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\hyprduel.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ikki.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\inufuku.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\iqblock.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\irobot.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ironhors.c" />
