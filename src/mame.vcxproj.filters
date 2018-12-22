@@ -1153,9 +1153,6 @@
     <ClInclude Include="..\depends\mame\src\cpu\m68000\m68000.h">
       <Filter>cpu\m68000</Filter>
     </ClInclude>
-    <ClInclude Include="..\depends\mame\src\cpu\mips\mips.h">
-      <Filter>cpu\mips</Filter>
-    </ClInclude>
     <ClInclude Include="..\depends\mame\src\cpu\mips\mips3.h">
       <Filter>cpu\mips</Filter>
     </ClInclude>
@@ -1226,9 +1223,6 @@
       <Filter>cpu\v60</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\cpu\z80\z80.h">
-      <Filter>cpu\z80</Filter>
-    </ClInclude>
-    <ClInclude Include="..\depends\mame\src\cpu\z80\z80daa.h">
       <Filter>cpu\z80</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\cpu\z80\z80dasm.h">
@@ -1373,6 +1367,21 @@
       <Filter>windows</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\config.h" />
+    <ClInclude Include="..\depends\mame\src\cpu\mips\psx.h">
+      <Filter>cpu\mips</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\machine\stvcd.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sndhrdw\cage.h">
+      <Filter>sndhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\scsp.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\vidhrdw\voodoo.h">
+      <Filter>vidhrdw</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\artwork.c" />
@@ -4327,9 +4336,6 @@
     <ClCompile Include="..\depends\mame\src\drivers\commando.c">
       <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\drivers\congo.c">
-      <Filter>drivers</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\contra.c">
       <Filter>drivers</Filter>
     </ClCompile>
@@ -6146,9 +6152,6 @@
     <ClCompile Include="..\depends\mame\src\cpu\mips\mips3drc.c">
       <Filter>cpu\mips</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\cpu\mips\mips.c">
-      <Filter>cpu\mips</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\konamigx.c">
       <Filter>drivers</Filter>
     </ClCompile>
@@ -6582,6 +6585,51 @@
       <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\bishi.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\mips\psx.c">
+      <Filter>cpu\mips</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\goal92.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\namcos12.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\quizpani.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\seattle.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sspeedr.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\stvhacks.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\tceptor.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\stvcd.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sndhrdw\cage.c">
+      <Filter>sndhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\scsp.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\goal92.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sspeedr.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\tceptor.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\voodoo.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
   </ItemGroup>
