@@ -150,6 +150,7 @@
 #define HAS_PIC16C58 0				// 0.67
 #define HAS_G65816 1				// 0.72
 #define HAS_SPC700 1				// 0.72
+#define HAS_E132XS 1				// 0.73
 
 // 
 // HAS_SOUND

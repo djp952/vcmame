@@ -5,7 +5,7 @@ Copyright (C)2018 Michael G. Brehm
    
 [__MAME__](https://www.mamedev.org/) - Copyright (C) 1997-2018  MAMEDev and contributors   
    
-__Baseline version:__ MAME 0.72 (August 9, 2003)   
+__Baseline version:__ MAME 0.73 (September 3, 2003)   
    
 | Platform | Compiles | Packages | Runs | Comments |
 | :--- | :---: | :---: | :---: | :--- |

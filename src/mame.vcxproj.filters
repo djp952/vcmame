@@ -142,6 +142,9 @@
     <Filter Include="cpu\spc700">
       <UniqueIdentifier>{fad7be99-5534-4597-b5c4-33cc974ea330}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpu\e132xs">
+      <UniqueIdentifier>{a1b66777-1b27-45ab-8042-268b53308313}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\depends\mame\src\artwork.h" />
@@ -1363,6 +1366,9 @@
     <ClInclude Include="..\depends\mame\src\includes\snk.h">
       <Filter>includes</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\e132xs\e132xs.h">
+      <Filter>cpu\e132xs</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\artwork.c" />
@@ -2002,9 +2008,6 @@
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\funkyjet.c">
-      <Filter>vidhrdw</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\vidhrdw\fuuki16.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\gaelco.c">
@@ -4551,9 +4554,6 @@
     <ClCompile Include="..\depends\mame\src\drivers\funkyjet.c">
       <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\drivers\fuuki16.c">
-      <Filter>drivers</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\gaelco.c">
       <Filter>drivers</Filter>
     </ClCompile>
@@ -6469,6 +6469,54 @@
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\xorworld.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\e132xs\32xsdasm.c">
+      <Filter>cpu\e132xs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\e132xs\e132xs.c">
+      <Filter>cpu\e132xs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\fuukifg2.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\fuukifg3.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\mogura.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\speedatk.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sprint8.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\strvmstr.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\vamphalf.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\strtheat.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\fuukifg2.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\fuukifg3.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\speedatk.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sprint8.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\stvvdp1.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\stvvdp2.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
   </ItemGroup>
