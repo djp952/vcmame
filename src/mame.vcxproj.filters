@@ -136,6 +136,12 @@
     <Filter Include="cpu\pic16c5x">
       <UniqueIdentifier>{2fca6b0f-6a92-4a82-8d73-1b9c2ff2e814}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpu\g65816">
+      <UniqueIdentifier>{80bacac0-beca-45de-98a2-754078449a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu\spc700">
+      <UniqueIdentifier>{fad7be99-5534-4597-b5c4-33cc974ea330}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\depends\mame\src\artwork.h" />
@@ -937,9 +943,6 @@
     <ClInclude Include="..\depends\mame\src\includes\slapstic.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="..\depends\mame\src\includes\sprint2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
     <ClInclude Include="..\depends\mame\src\includes\starwars.h">
       <Filter>includes</Filter>
     </ClInclude>
@@ -1325,6 +1328,39 @@
       <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="..\depends\mame\src\includes\psx.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\vidhrdw\matrix3d.h">
+      <Filter>vidhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\spc700\spc700.h">
+      <Filter>cpu\spc700</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\spc700\spc700ds.h">
+      <Filter>cpu\spc700</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\g65816\g65816.h">
+      <Filter>cpu\g65816</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\g65816\g65816cm.h">
+      <Filter>cpu\g65816</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\g65816\g65816ds.h">
+      <Filter>cpu\g65816</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\cpu\g65816\g65816op.h">
+      <Filter>cpu\g65816</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\sp0250.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sndhrdw\segasnd.h">
+      <Filter>sndhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\includes\snes.h">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\includes\snk.h">
       <Filter>includes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1855,9 +1891,6 @@
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\dogfgt.c">
-      <Filter>vidhrdw</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\vidhrdw\dominos.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\dooyong.c">
@@ -3879,9 +3912,6 @@
     <ClCompile Include="..\depends\mame\src\machine\spiders.c">
       <Filter>machine</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\machine\sprint2.c">
-      <Filter>machine</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\machine\stactics.c">
       <Filter>machine</Filter>
     </ClCompile>
@@ -4399,9 +4429,6 @@
       <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\dogfgt.c">
-      <Filter>drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\drivers\dominos.c">
       <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\dooyong.c">
@@ -6340,6 +6367,108 @@
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\psx.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\matrix3d.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\spc700\spc700.c">
+      <Filter>cpu\spc700</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\spc700\spc700ds.c">
+      <Filter>cpu\spc700</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816ds.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816o0.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816o1.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816o2.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816o3.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\cpu\g65816\g65816o4.c">
+      <Filter>cpu\g65816</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\sp0250.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\bigevglf.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\pitnrun.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\snes.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sndhrdw\segasnd.c">
+      <Filter>sndhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sndhrdw\snes.c">
+      <Filter>sndhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\bigevglf.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\ltcasino.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\mazerbla.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\nss.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\pitnrun.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sbowling.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sengokmj.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sprint4.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\ssrj.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\supdrapo.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\xorworld.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\bigevglf.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\pitnrun.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sengokmj.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\snes.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sprint4.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\ssrj.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\xorworld.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
   </ItemGroup>
