@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\cpu\m68000\make68k.c" />
+    <ClCompile Include="cpu\m68000\make68k.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vc\vcmame.h" />
@@ -108,7 +108,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -131,7 +131,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -160,7 +160,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -187,7 +187,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>

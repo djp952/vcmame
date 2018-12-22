@@ -1,9 +1,6 @@
 [submodule "zlib"]
 	path = depends/zlib
 	url = https://github.com/madler/zlib.git
-[submodule "mame"]
-	path = depends/mame
-	url = https://github.com/djp952/external-mame.git
 [submodule "build"]
 	path = depends/build
 	url = https://github.com/djp952/build.git

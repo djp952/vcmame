@@ -25,7 +25,7 @@
     <ResourceCompile Include="..\tmp\version\version.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\xml2info\xml2info.c" />
+    <ClCompile Include="xml2info\xml2info.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -111,7 +111,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -128,7 +128,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -147,7 +147,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -168,7 +168,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>

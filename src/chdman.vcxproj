@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\chd.c" />
-    <ClCompile Include="..\depends\mame\src\chdman.c" />
-    <ClCompile Include="..\depends\mame\src\md5.c" />
-    <ClCompile Include="..\depends\mame\src\sha1.c" />
-    <ClCompile Include="..\depends\mame\src\version.c" />
+    <ClCompile Include="chd.c" />
+    <ClCompile Include="chdman.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="sha1.c" />
+    <ClCompile Include="version.c" />
     <ClCompile Include="..\depends\zlib\adler32.c" />
     <ClCompile Include="..\depends\zlib\crc32.c" />
     <ClCompile Include="..\depends\zlib\deflate.c" />
@@ -37,9 +37,9 @@
     <ClCompile Include="..\depends\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\depends\mame\src\chd.h" />
-    <ClInclude Include="..\depends\mame\src\md5.h" />
-    <ClInclude Include="..\depends\mame\src\sha1.h" />
+    <ClInclude Include="chd.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="sha1.h" />
     <ClInclude Include="..\depends\zlib\zconf.h" />
     <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="vc\vcmame.h" />
@@ -131,7 +131,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -148,7 +148,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -167,7 +167,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -188,7 +188,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>

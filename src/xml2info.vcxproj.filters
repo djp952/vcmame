@@ -16,6 +16,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\xml2info\xml2info.c" />
+    <ClCompile Include="xml2info\xml2info.c" />
   </ItemGroup>
 </Project>

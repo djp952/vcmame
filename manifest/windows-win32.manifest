@@ -2,14 +2,10 @@
 <zip>
   <file path="artwork\dir.txt" source="package\artwork\dir.txt" normalize="windows"/>
   <directory path="ctrlr" source="package\ctrlr" recursive="true"/>
-  <directory path="docs" source="depends\mame\docs" recursive="true"/>
   <file path="roms\dir.txt" source="package\roms\dir.txt" normalize="windows"/>
   <file path="samples\dir.txt" source="package\samples\dir.txt" normalize="windows"/>
-  <file path="changed.txt" source="depends\mame\changed.txt" normalize="windows"/>
   <file path="chdman.exe" source="out\windows-Win32\Release\chdman.exe"/>
   <file path="mame.exe" source="out\windows-Win32\Release\mame.exe"/>
   <file path="romcmp.exe" source="out\windows-Win32\Release\romcmp.exe"/>
-  <file path="whatsnew.txt" source="depends\mame\whatsnew.txt" normalize="windows"/>
-  <file path="whatsold.txt" source="depends\mame\whatsold.txt" normalize="windows"/>
   <file path="xml2info.exe" source="out\windows-Win32\Release\xml2info.exe"/>
 </zip>

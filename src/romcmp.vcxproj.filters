@@ -42,8 +42,8 @@
     <ClCompile Include="..\depends\zlib\zutil.c">
       <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\romcmp.c" />
-    <ClCompile Include="..\depends\mame\src\unzip.c" />
+    <ClCompile Include="romcmp.c" />
+    <ClCompile Include="unzip.c" />
     <ClCompile Include="vc\dirent.c">
       <Filter>vc</Filter>
     </ClCompile>
@@ -55,9 +55,9 @@
     <ClInclude Include="..\depends\zlib\zlib.h">
       <Filter>zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\depends\mame\src\driver.h" />
-    <ClInclude Include="..\depends\mame\src\unzip.h" />
-    <ClInclude Include="..\depends\mame\src\fileio.h" />
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="unzip.h" />
+    <ClInclude Include="fileio.h" />
     <ClInclude Include="vc\dirent.h">
       <Filter>vc</Filter>
     </ClInclude>

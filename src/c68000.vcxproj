@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\cpu\m68000\m68kmake.c" />
+    <ClCompile Include="cpu\m68000\m68kmake.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vc\vcmame.h" />
@@ -108,7 +108,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -116,7 +116,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)..\depends\mame\src\cpu\m68000\m68k_in.c"</Command>
+      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)cpu\m68000\m68k_in.c"</Command>
       <Message>Building Motorola 680x0 C Core</Message>
       <Outputs>$(ProjectDir)..\tmp\c68000\m68kopac.c;$(ProjectDir)..\tmp\c68000\m68kopdm.c;$(ProjectDir)..\tmp\c68000\m68kopnz.c;$(ProjectDir)..\tmp\c68000\m68kops.c;$(ProjectDir)..\tmp\c68000\m68kops.h</Outputs>
     </CustomBuildStep>
@@ -130,7 +130,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -138,7 +138,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)..\depends\mame\src\cpu\m68000\m68k_in.c"</Command>
+      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)cpu\m68000\m68k_in.c"</Command>
       <Message>Building Motorola 680x0 C Core</Message>
       <Outputs>$(ProjectDir)..\tmp\c68000\m68kopac.c;$(ProjectDir)..\tmp\c68000\m68kopdm.c;$(ProjectDir)..\tmp\c68000\m68kopnz.c;$(ProjectDir)..\tmp\c68000\m68kops.c;$(ProjectDir)..\tmp\c68000\m68kops.h</Outputs>
     </CustomBuildStep>
@@ -154,7 +154,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -164,7 +164,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)..\depends\mame\src\cpu\m68000\m68k_in.c"</Command>
+      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)cpu\m68000\m68k_in.c"</Command>
       <Message>Building Motorola 680x0 C Core</Message>
       <Outputs>$(ProjectDir)..\tmp\c68000\m68kopac.c;$(ProjectDir)..\tmp\c68000\m68kopdm.c;$(ProjectDir)..\tmp\c68000\m68kopnz.c;$(ProjectDir)..\tmp\c68000\m68kops.c;$(ProjectDir)..\tmp\c68000\m68kops.h</Outputs>
     </CustomBuildStep>
@@ -180,7 +180,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -190,7 +190,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuildStep>
-      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)..\depends\mame\src\cpu\m68000\m68k_in.c"</Command>
+      <Command>"$(TargetPath)" "$(ProjectDir)..\tmp\c68000" "$(ProjectDir)cpu\m68000\m68k_in.c"</Command>
       <Message>Building Motorola 680x0 C Core</Message>
       <Outputs>$(ProjectDir)..\tmp\c68000\m68kopac.c;$(ProjectDir)..\tmp\c68000\m68kopdm.c;$(ProjectDir)..\tmp\c68000\m68kopnz.c;$(ProjectDir)..\tmp\c68000\m68kops.c;$(ProjectDir)..\tmp\c68000\m68kops.h</Outputs>
     </CustomBuildStep>

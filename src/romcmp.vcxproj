@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\depends\mame\src\romcmp.c" />
-    <ClCompile Include="..\depends\mame\src\unzip.c" />
+    <ClCompile Include="romcmp.c" />
+    <ClCompile Include="unzip.c" />
     <ClCompile Include="..\depends\zlib\adler32.c" />
     <ClCompile Include="..\depends\zlib\crc32.c" />
     <ClCompile Include="..\depends\zlib\deflate.c" />
@@ -35,9 +35,9 @@
     <ClCompile Include="vc\dirent.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\depends\mame\src\driver.h" />
-    <ClInclude Include="..\depends\mame\src\fileio.h" />
-    <ClInclude Include="..\depends\mame\src\unzip.h" />
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="fileio.h" />
+    <ClInclude Include="unzip.h" />
     <ClInclude Include="..\depends\zlib\zconf.h" />
     <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="vc\dirent.h" />
@@ -130,7 +130,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -147,7 +147,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -166,7 +166,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
@@ -187,7 +187,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)vc;$(ProjectDir)..\depends\mame\src;$(ProjectDir)..\depends\mame\src\includes;$(ProjectDir)..\depends\mame\src\windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)vc;$(ProjectDir)includes;$(ProjectDir)windows;$(ProjectDir)..\depends\zlib</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)vc\vcmame.h</ForcedIncludeFiles>
     </ClCompile>
     <Link>
