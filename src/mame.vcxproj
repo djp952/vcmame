@@ -117,6 +117,7 @@
     <ClInclude Include="..\depends\mame\src\drivers\m92.h" />
     <ClInclude Include="..\depends\mame\src\fileio.h" />
     <ClInclude Include="..\depends\mame\src\harddisk.h" />
+    <ClInclude Include="..\depends\mame\src\hash.h" />
     <ClInclude Include="..\depends\mame\src\hiscore.h" />
     <ClInclude Include="..\depends\mame\src\includes\8080bw.h" />
     <ClInclude Include="..\depends\mame\src\includes\appoooh.h" />
@@ -270,6 +271,7 @@
     <ClInclude Include="..\depends\mame\src\input.h" />
     <ClInclude Include="..\depends\mame\src\legacy.h" />
     <ClInclude Include="..\depends\mame\src\machine\6522via.h" />
+    <ClInclude Include="..\depends\mame\src\machine\6532riot.h" />
     <ClInclude Include="..\depends\mame\src\machine\6821pia.h" />
     <ClInclude Include="..\depends\mame\src\machine\74123.h" />
     <ClInclude Include="..\depends\mame\src\machine\74148.h" />
@@ -296,6 +298,7 @@
     <ClInclude Include="..\depends\mame\src\machine\segacrpt.h" />
     <ClInclude Include="..\depends\mame\src\machine\tait8741.h" />
     <ClInclude Include="..\depends\mame\src\machine\ticket.h" />
+    <ClInclude Include="..\depends\mame\src\machine\tmp68301.h" />
     <ClInclude Include="..\depends\mame\src\machine\z80fmly.h" />
     <ClInclude Include="..\depends\mame\src\mame.h" />
     <ClInclude Include="..\depends\mame\src\mamedbg.h" />
@@ -306,6 +309,7 @@
     <ClInclude Include="..\depends\mame\src\palette.h" />
     <ClInclude Include="..\depends\mame\src\png.h" />
     <ClInclude Include="..\depends\mame\src\profiler.h" />
+    <ClInclude Include="..\depends\mame\src\sha1.h" />
     <ClInclude Include="..\depends\mame\src\sndhrdw\atarijsa.h" />
     <ClInclude Include="..\depends\mame\src\sndhrdw\dcs.h" />
     <ClInclude Include="..\depends\mame\src\sndhrdw\irem.h" />
@@ -364,6 +368,8 @@
     <ClInclude Include="..\depends\mame\src\sound\sn76477.h" />
     <ClInclude Include="..\depends\mame\src\sound\sn76496.h" />
     <ClInclude Include="..\depends\mame\src\sound\streams.h" />
+    <ClInclude Include="..\depends\mame\src\sound\tiaintf.h" />
+    <ClInclude Include="..\depends\mame\src\sound\tiasound.h" />
     <ClInclude Include="..\depends\mame\src\sound\tms36xx.h" />
     <ClInclude Include="..\depends\mame\src\sound\tms5110.h" />
     <ClInclude Include="..\depends\mame\src\sound\tms5220.h" />
@@ -396,10 +402,12 @@
     <ClInclude Include="..\depends\mame\src\vidhrdw\ppu2c03b.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\res_net.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\s2636.h" />
+    <ClInclude Include="..\depends\mame\src\vidhrdw\segaic24.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\system1.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\taitoic.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\tlc34076.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\tms34061.h" />
+    <ClInclude Include="..\depends\mame\src\vidhrdw\tms9928a.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\vector.h" />
     <ClInclude Include="..\depends\mame\src\vidhrdw\ygv608.h" />
     <ClInclude Include="..\depends\mame\src\window.h" />
@@ -411,6 +419,7 @@
     <ClInclude Include="..\depends\mame\src\windows\osinline.h" />
     <ClInclude Include="..\depends\mame\src\windows\rc.h" />
     <ClInclude Include="..\depends\mame\src\windows\video.h" />
+    <ClInclude Include="..\depends\mame\src\windows\wind3d.h" />
     <ClInclude Include="..\depends\mame\src\windows\winddraw.h" />
     <ClInclude Include="..\depends\mame\src\windows\window.h" />
     <ClInclude Include="..\depends\mame\src\windows\winprefix.h" />
@@ -419,6 +428,7 @@
     <ClInclude Include="..\depends\zlib\zlib.h" />
     <ClInclude Include="..\tmp\c68000\m68kops.h" />
     <ClInclude Include="vc\dirent.h" />
+    <ClInclude Include="vc\unistd.h" />
     <ClInclude Include="vc\vcmame.h" />
   </ItemGroup>
   <ItemGroup>
@@ -694,6 +704,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\bublbobl.c" />
     <ClCompile Include="..\depends\mame\src\drivers\buggychl.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bwidow.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\bwing.c" />
     <ClCompile Include="..\depends\mame\src\drivers\bzone.c" />
     <ClCompile Include="..\depends\mame\src\drivers\cabal.c" />
     <ClCompile Include="..\depends\mame\src\drivers\canyon.c" />
@@ -707,9 +718,11 @@
     <ClCompile Include="..\depends\mame\src\drivers\cchasm.c" />
     <ClCompile Include="..\depends\mame\src\drivers\cclimber.c" />
     <ClCompile Include="..\depends\mame\src\drivers\centiped.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\chaknpop.c" />
     <ClCompile Include="..\depends\mame\src\drivers\champbas.c" />
     <ClCompile Include="..\depends\mame\src\drivers\cheekyms.c" />
     <ClCompile Include="..\depends\mame\src\drivers\chinagat.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\chindrag.c" />
     <ClCompile Include="..\depends\mame\src\drivers\chqflag.c" />
     <ClCompile Include="..\depends\mame\src\drivers\cinemat.c" />
     <ClCompile Include="..\depends\mame\src\drivers\circus.c" />
@@ -785,6 +798,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\exterm.c" />
     <ClCompile Include="..\depends\mame\src\drivers\exzisus.c" />
     <ClCompile Include="..\depends\mame\src\drivers\f1gp.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\fantland.c" />
     <ClCompile Include="..\depends\mame\src\drivers\fastfred.c" />
     <ClCompile Include="..\depends\mame\src\drivers\fastlane.c" />
     <ClCompile Include="..\depends\mame\src\drivers\fcombat.c" />
@@ -834,6 +848,8 @@
     <ClCompile Include="..\depends\mame\src\drivers\grchamp.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gridlee.c" />
     <ClCompile Include="..\depends\mame\src\drivers\grobda.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\groundfx.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\grtwall.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gstriker.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gsword.c" />
     <ClCompile Include="..\depends\mame\src\drivers\gumbo.c" />
@@ -890,6 +906,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\leland.c" />
     <ClCompile Include="..\depends\mame\src\drivers\lemmings.c" />
     <ClCompile Include="..\depends\mame\src\drivers\leprechn.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\lethalj.c" />
     <ClCompile Include="..\depends\mame\src\drivers\liberate.c" />
     <ClCompile Include="..\depends\mame\src\drivers\liberatr.c" />
     <ClCompile Include="..\depends\mame\src\drivers\lkage.c" />
@@ -907,6 +924,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\madmotor.c" />
     <ClCompile Include="..\depends\mame\src\drivers\magmax.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mainevt.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\mainsnk.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mappy.c" />
     <ClCompile Include="..\depends\mame\src\drivers\marineb.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mario.c" />
@@ -923,6 +941,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\megasys1.c" />
     <ClCompile Include="..\depends\mame\src\drivers\megazone.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mermaid.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\metlclsh.c" />
     <ClCompile Include="..\depends\mame\src\drivers\metro.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mexico86.c" />
     <ClCompile Include="..\depends\mame\src\drivers\mhavoc.c" />
@@ -1001,6 +1020,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\pass.c" />
     <ClCompile Include="..\depends\mame\src\drivers\pastelgl.c" />
     <ClCompile Include="..\depends\mame\src\drivers\pbaction.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\pbillian.c" />
     <ClCompile Include="..\depends\mame\src\drivers\pcktgal.c" />
     <ClCompile Include="..\depends\mame\src\drivers\pengo.c" />
     <ClCompile Include="..\depends\mame\src\drivers\pgm.c" />
@@ -1031,11 +1051,13 @@
     <ClCompile Include="..\depends\mame\src\drivers\quantum.c" />
     <ClCompile Include="..\depends\mame\src\drivers\quizdna.c" />
     <ClCompile Include="..\depends\mame\src\drivers\raiden.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\raiden2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\raiders5.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rainbow.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rallyx.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rampart.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rastan.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\realbrk.c" />
     <ClCompile Include="..\depends\mame\src\drivers\redalert.c" />
     <ClCompile Include="..\depends\mame\src\drivers\redclash.c" />
     <ClCompile Include="..\depends\mame\src\drivers\relief.c" />
@@ -1048,6 +1070,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\rohga.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rollerg.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rollrace.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\rotaryf.c" />
     <ClCompile Include="..\depends\mame\src\drivers\route16.c" />
     <ClCompile Include="..\depends\mame\src\drivers\royalmah.c" />
     <ClCompile Include="..\depends\mame\src\drivers\rpunch.c" />
@@ -1056,6 +1079,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\sauro.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sbasketb.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sbrkout.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\sbugger.c" />
     <ClCompile Include="..\depends\mame\src\drivers\scobra.c" />
     <ClCompile Include="..\depends\mame\src\drivers\scramble.c" />
     <ClCompile Include="..\depends\mame\src\drivers\scregg.c" />
@@ -1068,6 +1092,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\seta.c" />
     <ClCompile Include="..\depends\mame\src\drivers\seta2.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sf1.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\sg1000a.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sgladiat.c" />
     <ClCompile Include="..\depends\mame\src\drivers\shadfrce.c" />
     <ClCompile Include="..\depends\mame\src\drivers\shangha3.c" />
@@ -1077,12 +1102,14 @@
     <ClCompile Include="..\depends\mame\src\drivers\sharrier.c" />
     <ClCompile Include="..\depends\mame\src\drivers\shisen.c" />
     <ClCompile Include="..\depends\mame\src\drivers\shootout.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\shougi.c" />
     <ClCompile Include="..\depends\mame\src\drivers\shuuz.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sidearms.c" />
     <ClCompile Include="..\depends\mame\src\drivers\sidepckt.c" />
     <ClCompile Include="..\depends\mame\src\drivers\silkroad.c" />
     <ClCompile Include="..\depends\mame\src\drivers\simpsons.c" />
     <ClCompile Include="..\depends\mame\src\drivers\skullxbo.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\skyarmy.c" />
     <ClCompile Include="..\depends\mame\src\drivers\skychut.c" />
     <ClCompile Include="..\depends\mame\src\drivers\skydiver.c" />
     <ClCompile Include="..\depends\mame\src\drivers\skyfox.c" />
@@ -1138,6 +1165,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\system1.c" />
     <ClCompile Include="..\depends\mame\src\drivers\system16.c" />
     <ClCompile Include="..\depends\mame\src\drivers\system18.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\system24.c" />
     <ClCompile Include="..\depends\mame\src\drivers\system32.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tagteam.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tail2nos.c" />
@@ -1163,6 +1191,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\tempest.c" />
     <ClCompile Include="..\depends\mame\src\drivers\terracre.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tetrisp2.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\thedeep.c" />
     <ClCompile Include="..\depends\mame\src\drivers\thepit.c" />
     <ClCompile Include="..\depends\mame\src\drivers\thief.c" />
     <ClCompile Include="..\depends\mame\src\drivers\thoop2.c" />
@@ -1180,12 +1209,14 @@
     <ClCompile Include="..\depends\mame\src\drivers\toobin.c" />
     <ClCompile Include="..\depends\mame\src\drivers\topspeed.c" />
     <ClCompile Include="..\depends\mame\src\drivers\toratora.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\tourtabl.c" />
     <ClCompile Include="..\depends\mame\src\drivers\toypop.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tp84.c" />
     <ClCompile Include="..\depends\mame\src\drivers\trackfld.c" />
     <ClCompile Include="..\depends\mame\src\drivers\travrusa.c" />
     <ClCompile Include="..\depends\mame\src\drivers\triplhnt.c" />
     <ClCompile Include="..\depends\mame\src\drivers\troangel.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\truco.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tsamurai.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ttmahjng.c" />
     <ClCompile Include="..\depends\mame\src\drivers\tubep.c" />
@@ -1199,7 +1230,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\ultraman.c" />
     <ClCompile Include="..\depends\mame\src\drivers\ultratnk.c" />
     <ClCompile Include="..\depends\mame\src\drivers\undrfire.c" />
-    <ClCompile Include="..\depends\mame\src\drivers\unico16.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\unico.c" />
     <ClCompile Include="..\depends\mame\src\drivers\usgames.c" />
     <ClCompile Include="..\depends\mame\src\drivers\vaportra.c" />
     <ClCompile Include="..\depends\mame\src\drivers\vastar.c" />
@@ -1213,6 +1244,7 @@
     <ClCompile Include="..\depends\mame\src\drivers\volfied.c" />
     <ClCompile Include="..\depends\mame\src\drivers\vsnes.c" />
     <ClCompile Include="..\depends\mame\src\drivers\vulgus.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\wallc.c" />
     <ClCompile Include="..\depends\mame\src\drivers\wardner.c" />
     <ClCompile Include="..\depends\mame\src\drivers\warpwarp.c" />
     <ClCompile Include="..\depends\mame\src\drivers\warriorb.c" />
@@ -1248,11 +1280,13 @@
     <ClCompile Include="..\depends\mame\src\drivers\zodiack.c" />
     <ClCompile Include="..\depends\mame\src\fileio.c" />
     <ClCompile Include="..\depends\mame\src\harddisk.c" />
+    <ClCompile Include="..\depends\mame\src\hash.c" />
     <ClCompile Include="..\depends\mame\src\hiscore.c" />
     <ClCompile Include="..\depends\mame\src\info.c" />
     <ClCompile Include="..\depends\mame\src\inptport.c" />
     <ClCompile Include="..\depends\mame\src\input.c" />
     <ClCompile Include="..\depends\mame\src\machine\6522via.c" />
+    <ClCompile Include="..\depends\mame\src\machine\6532riot.c" />
     <ClCompile Include="..\depends\mame\src\machine\6821pia.c" />
     <ClCompile Include="..\depends\mame\src\machine\74123.c" />
     <ClCompile Include="..\depends\mame\src\machine\74148.c" />
@@ -1284,6 +1318,7 @@
     <ClCompile Include="..\depends\mame\src\machine\carpolo.c" />
     <ClCompile Include="..\depends\mame\src\machine\cchasm.c" />
     <ClCompile Include="..\depends\mame\src\machine\cchip.c" />
+    <ClCompile Include="..\depends\mame\src\machine\chaknpop.c" />
     <ClCompile Include="..\depends\mame\src\machine\clayshoo.c" />
     <ClCompile Include="..\depends\mame\src\machine\copsnrob.c" />
     <ClCompile Include="..\depends\mame\src\machine\dec0.c" />
@@ -1367,10 +1402,12 @@
     <ClCompile Include="..\depends\mame\src\machine\subs.c" />
     <ClCompile Include="..\depends\mame\src\machine\superpac.c" />
     <ClCompile Include="..\depends\mame\src\machine\system16.c" />
+    <ClCompile Include="..\depends\mame\src\machine\system24.c" />
     <ClCompile Include="..\depends\mame\src\machine\tait8741.c" />
     <ClCompile Include="..\depends\mame\src\machine\taitosj.c" />
     <ClCompile Include="..\depends\mame\src\machine\theglobp.c" />
     <ClCompile Include="..\depends\mame\src\machine\ticket.c" />
+    <ClCompile Include="..\depends\mame\src\machine\tmp68301.c" />
     <ClCompile Include="..\depends\mame\src\machine\tnzs.c" />
     <ClCompile Include="..\depends\mame\src\machine\toaplan1.c" />
     <ClCompile Include="..\depends\mame\src\machine\toypop.c" />
@@ -1391,6 +1428,7 @@
     <ClCompile Include="..\depends\mame\src\palette.c" />
     <ClCompile Include="..\depends\mame\src\png.c" />
     <ClCompile Include="..\depends\mame\src\profiler.c" />
+    <ClCompile Include="..\depends\mame\src\sha1.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\8080bw.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\asteroid.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\astinvad.c" />
@@ -1430,6 +1468,7 @@
     <ClCompile Include="..\depends\mame\src\sndhrdw\mario.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\mcr.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\meadows.c" />
+    <ClCompile Include="..\depends\mame\src\sndhrdw\pbillian.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\phoenix.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\pleiads.c" />
     <ClCompile Include="..\depends\mame\src\sndhrdw\polepos.c" />
@@ -1503,6 +1542,8 @@
     <ClCompile Include="..\depends\mame\src\sound\sn76477.c" />
     <ClCompile Include="..\depends\mame\src\sound\sn76496.c" />
     <ClCompile Include="..\depends\mame\src\sound\streams.c" />
+    <ClCompile Include="..\depends\mame\src\sound\tiaintf.c" />
+    <ClCompile Include="..\depends\mame\src\sound\tiasound.c" />
     <ClCompile Include="..\depends\mame\src\sound\tms36xx.c" />
     <ClCompile Include="..\depends\mame\src\sound\tms5110.c" />
     <ClCompile Include="..\depends\mame\src\sound\tms5220.c" />
@@ -1605,6 +1646,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\btoads.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\bublbobl.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\buggychl.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\bwing.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\cabal.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\canyon.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\capbowl.c" />
@@ -1617,6 +1659,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\cchasm.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\cclimber.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\centiped.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\chaknpop.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\champbas.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\cheekyms.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\chqflag.c" />
@@ -1689,6 +1732,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\exterm.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\exzisus.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\f1gp.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\fantland.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\fastfred.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\fastlane.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\finalizr.c" />
@@ -1736,6 +1780,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\grchamp.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gridlee.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\grobda.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\groundfx.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gstriker.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gsword.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\gumbo.c" />
@@ -1789,6 +1834,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\leland.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\lemmings.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\leprechn.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\lethalj.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\liberate.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\liberatr.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\lkage.c" />
@@ -1819,6 +1865,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\megasys1.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\megazone.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\mermaid.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\metlclsh.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\metro.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\mexico86.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\midtunit.c" />
@@ -1886,6 +1933,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\pass.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pastelgl.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pbaction.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\pbillian.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pcktgal.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pengo.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\pgm.c" />
@@ -1920,6 +1968,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\rallyx.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\rampart.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\rastan.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\realbrk.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\redalert.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\redclash.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\relief.c" />
@@ -1938,8 +1987,10 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\sauro.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\sbasketb.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\sbrkout.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sbugger.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\sega.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\segac2.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\segaic24.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\segar.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\segasyse.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\seicross.c" />
@@ -2010,6 +2061,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\sys16spr.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\system1.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\system16.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\system24.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\system32.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tagteam.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tail2nos.c" />
@@ -2034,11 +2086,13 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\tehkanwc.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\terracre.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tetrisp2.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\thedeep.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\thepit.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\thief.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\thoop2.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\thunderj.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\thunderx.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\tia.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tickee.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tigeroad.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\timelimt.c" />
@@ -2046,6 +2100,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\tlc34076.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tmnt.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tms34061.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\tms9928a.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tnzs.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\toaplan1.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\toaplan2.c" />
@@ -2058,6 +2113,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\travrusa.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\triplhnt.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\troangel.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\truco.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tsamurai.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ttmahjng.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\tubep.c" />
@@ -2069,7 +2125,7 @@
     <ClCompile Include="..\depends\mame\src\vidhrdw\twincobr.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\ultraman.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\undrfire.c" />
-    <ClCompile Include="..\depends\mame\src\vidhrdw\unico16.c" />
+    <ClCompile Include="..\depends\mame\src\vidhrdw\unico.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\usgames.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\vaportra.c" />
     <ClCompile Include="..\depends\mame\src\vidhrdw\vastar.c" />
@@ -2125,6 +2181,7 @@
     <ClCompile Include="..\depends\mame\src\windows\sound.c" />
     <ClCompile Include="..\depends\mame\src\windows\ticker.c" />
     <ClCompile Include="..\depends\mame\src\windows\video.c" />
+    <ClCompile Include="..\depends\mame\src\windows\wind3d.c" />
     <ClCompile Include="..\depends\mame\src\windows\winddraw.c" />
     <ClCompile Include="..\depends\mame\src\windows\window.c" />
     <ClCompile Include="..\depends\mame\src\windows\winmain.c" />

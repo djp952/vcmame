@@ -210,6 +210,8 @@
 #define HAS_YMF262 1			// 0.66
 #define HAS_MULTIPCM 1			// 0.67
 #define HAS_C6280 1				// 0.67
+#define HAS_TIA 1				// 0.68
+
 //---------------------------------------------------------------------------
 
 #endif		// __VCMAME_H_

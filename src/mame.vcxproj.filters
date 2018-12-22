@@ -1274,6 +1274,32 @@
     <ClInclude Include="..\depends\mame\src\cpu\pic16c5x\pic16c5x.h">
       <Filter>cpu\pic16c5x</Filter>
     </ClInclude>
+    <ClInclude Include="..\depends\mame\src\windows\wind3d.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\machine\6532riot.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\machine\tmp68301.h">
+      <Filter>machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\hash.h" />
+    <ClInclude Include="..\depends\mame\src\sha1.h" />
+    <ClInclude Include="..\depends\mame\src\vidhrdw\segaic24.h">
+      <Filter>vidhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\vidhrdw\tms9928a.h">
+      <Filter>vidhrdw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\tiaintf.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depends\mame\src\sound\tiasound.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="vc\unistd.h">
+      <Filter>vc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\depends\mame\src\artwork.c" />
@@ -3002,9 +3028,6 @@
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\undrfire.c">
-      <Filter>vidhrdw</Filter>
-    </ClCompile>
-    <ClCompile Include="..\depends\mame\src\vidhrdw\unico16.c">
       <Filter>vidhrdw</Filter>
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\vidhrdw\usgames.c">
@@ -5650,9 +5673,6 @@
     <ClCompile Include="..\depends\mame\src\drivers\undrfire.c">
       <Filter>drivers</Filter>
     </ClCompile>
-    <ClCompile Include="..\depends\mame\src\drivers\unico16.c">
-      <Filter>drivers</Filter>
-    </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\usgames.c">
       <Filter>drivers</Filter>
     </ClCompile>
@@ -6079,6 +6099,149 @@
     </ClCompile>
     <ClCompile Include="..\depends\mame\src\drivers\mystwarr.c">
       <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\windows\wind3d.c">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\6532riot.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\tmp68301.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\hash.c" />
+    <ClCompile Include="..\depends\mame\src\sha1.c" />
+    <ClCompile Include="..\depends\mame\src\drivers\rotaryf.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\chaknpop.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\pbillian.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\chaknpop.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\chaknpop.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\pbillian.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\groundfx.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sg1000a.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\system24.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\machine\system24.c">
+      <Filter>machine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\segaic24.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\system24.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\tms9928a.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\tia.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\tourtabl.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\mainsnk.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\shougi.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\raiden2.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\unico.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\chindrag.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\grtwall.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\realbrk.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\realbrk.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\fantland.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\lethalj.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\sbugger.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\thedeep.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\truco.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\fantland.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\lethalj.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\sbugger.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\skyarmy.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\thedeep.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\truco.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\wallc.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\tiaintf.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sound\tiasound.c">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\groundfx.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\unico.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\bwing.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\bwing.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\drivers\metlclsh.c">
+      <Filter>drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\vidhrdw\metlclsh.c">
+      <Filter>vidhrdw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depends\mame\src\sndhrdw\pbillian.c">
+      <Filter>sndhrdw</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
