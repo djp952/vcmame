@@ -25,9 +25,6 @@
     <Filter Include="cpu">
       <UniqueIdentifier>{5e03a0f4-716b-4a03-9135-dc2f7eb706e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="cpu\s2650">
-      <UniqueIdentifier>{1338b5b2-e467-4ec1-ab97-ca76af2b6c63}</UniqueIdentifier>
-    </Filter>
     <Filter Include="vc">
       <UniqueIdentifier>{06a5802f-32d1-47c9-9b83-64989b869b41}</UniqueIdentifier>
     </Filter>
@@ -124,443 +121,11 @@
     <ClInclude Include="sound\wavwrite.h">
       <Filter>sound</Filter>
     </ClInclude>
-    <ClInclude Include="includes\8080bw.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\appoooh.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\arabian.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\arcadecl.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\artmagic.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\asteroid.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarifb.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarig1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarig42.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarigt.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarigx2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarisy1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atarisy2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\atetris.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\avalnche.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\aztarac.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\badlands.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\balsente.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\batman.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\beaminv.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\beathead.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\berzerk.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\blstroid.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\bsktball.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\btoads.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\bzone.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\canyon.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\capbowl.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\carpolo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cave.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\ccastles.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cchasm.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\centiped.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cinemat.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\clayshoo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cloak.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cloud9.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cninja.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cojag.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\copsnrob.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cps1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\crgolf.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\crshrace.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\cyberbal.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dassault.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dec0.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\deco16ic.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\deco32.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\decocrpt.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\decoprot.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dogfgt.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dominos.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dribling.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\dynax.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\epos.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\eprom.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\espial.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\exerion.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\exidy.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\exidy440.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\f1gp.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\fastfred.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\firetrk.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\foodf.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\fromance.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\funkyjet.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\galaxian.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\gauntlet.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\gcpinbal.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\gridlee.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\gstriker.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\harddriv.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\homedata.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\iqblock.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\irobot.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\itech8.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\itech32.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\jaguar.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\jedi.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\jrpacman.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\kaneko16.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\kangaroo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\kinst.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\klax.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\kyugo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\lasso.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\leland.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\lemmings.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\leprechn.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\liberatr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\lwings.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\mcr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\meadows.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\megasys1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\mhavoc.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\midtunit.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\midvunit.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\midwunit.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\midyunit.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\missile.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcoic.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcona1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namconb1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcond1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcos2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcos3d.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\namcos22.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\nb1413m3.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\neogeo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\news.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\nitedrvr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\offtwall.h">
-      <Filter>includes</Filter>
-    </ClInclude>
     <ClInclude Include="includes\pacman.h">
       <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="includes\pengo.h">
       <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\policetr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\psikyosh.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\qix.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\rampart.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\relief.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\sbrkout.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\sega.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\segac2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\segar.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\seta.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\shuuz.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\skullxbo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\skydiver.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\slapstic.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\starwars.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\subs.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\system16.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\taito_f2.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\taito_f3.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\taxidrvr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\thunderj.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\tickee.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\toaplan1.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\toobin.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\tubep.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\turbo.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\vindictr.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\williams.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\wwfwfest.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\xybots.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="cpu\s2650\s2650.h">
-      <Filter>cpu\s2650</Filter>
-    </ClInclude>
-    <ClInclude Include="cpu\s2650\s2650cpu.h">
-      <Filter>cpu\s2650</Filter>
     </ClInclude>
     <ClInclude Include="vc\vcmame.h">
       <Filter>vc</Filter>
@@ -586,35 +151,8 @@
     <ClInclude Include="windows\wind3dfx.h">
       <Filter>windows</Filter>
     </ClInclude>
-    <ClInclude Include="includes\lethalj.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\paradise.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\realbrk.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\system24.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\thedeep.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\unico.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\psx.h">
-      <Filter>includes</Filter>
-    </ClInclude>
     <ClInclude Include="vidhrdw\matrix3d.h">
       <Filter>vidhrdw</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\snes.h">
-      <Filter>includes</Filter>
-    </ClInclude>
-    <ClInclude Include="includes\snk.h">
-      <Filter>includes</Filter>
     </ClInclude>
     <ClInclude Include="windows\config.h">
       <Filter>windows</Filter>
@@ -631,12 +169,6 @@
       <Filter>cpu\z80</Filter>
     </ClInclude>
     <ClInclude Include="sound\namco.h">
-      <Filter>sound</Filter>
-    </ClInclude>
-    <ClInclude Include="sound\sn76496.h">
-      <Filter>sound</Filter>
-    </ClInclude>
-    <ClInclude Include="sound\ay8910.h">
       <Filter>sound</Filter>
     </ClInclude>
     <ClInclude Include="vidhrdw\avgdvg.h">
@@ -746,26 +278,14 @@
     <ClCompile Include="sound\wavwrite.c">
       <Filter>sound</Filter>
     </ClCompile>
-    <ClCompile Include="machine\jumpshot.c">
-      <Filter>machine</Filter>
-    </ClCompile>
     <ClCompile Include="machine\mspacman.c">
       <Filter>machine</Filter>
     </ClCompile>
     <ClCompile Include="machine\pacplus.c">
       <Filter>machine</Filter>
     </ClCompile>
-    <ClCompile Include="machine\theglobp.c">
-      <Filter>machine</Filter>
-    </ClCompile>
     <ClCompile Include="drivers\pacman.c">
       <Filter>drivers</Filter>
-    </ClCompile>
-    <ClCompile Include="cpu\s2650\2650dasm.c">
-      <Filter>cpu\s2650</Filter>
-    </ClCompile>
-    <ClCompile Include="cpu\s2650\s2650.c">
-      <Filter>cpu\s2650</Filter>
     </ClCompile>
     <ClCompile Include="vc\dirent.c">
       <Filter>vc</Filter>
@@ -778,9 +298,6 @@
     <ClCompile Include="sha1.c" />
     <ClCompile Include="windows\wind3dfx.c">
       <Filter>windows</Filter>
-    </ClCompile>
-    <ClCompile Include="machine\acitya.c">
-      <Filter>machine</Filter>
     </ClCompile>
     <ClCompile Include="vidhrdw\matrix3d.c">
       <Filter>vidhrdw</Filter>
@@ -827,12 +344,6 @@
       <Filter>drivers</Filter>
     </ClCompile>
     <ClCompile Include="sound\namco.c">
-      <Filter>sound</Filter>
-    </ClCompile>
-    <ClCompile Include="sound\sn76496.c">
-      <Filter>sound</Filter>
-    </ClCompile>
-    <ClCompile Include="sound\ay8910.c">
       <Filter>sound</Filter>
     </ClCompile>
     <ClCompile Include="vidhrdw\pengo.c">
